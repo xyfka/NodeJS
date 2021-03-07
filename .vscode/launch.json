@@ -13,7 +13,7 @@
             ],
             "program": "${workspaceFolder}/04-Express/app.js",
             "runtimeExecutable": "nodemon",
-            "console": "externalTerminal"
+            "console": "integratedTerminal"
         
         }
     ]
