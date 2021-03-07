@@ -1,0 +1,10 @@
+.main {
+    padding: 0 10;
+    margin: 0 auto;
+    background-color: rgb(8, 71, 71);
+    color: brown;
+}
+
+h1 {
+    color: chartreuse;
+}

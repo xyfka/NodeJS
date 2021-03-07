@@ -11,12 +11,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/03-Basics/app.js",
-            "restart": true,
+            "program": "${workspaceFolder}/04-Express/app.js",
             "runtimeExecutable": "nodemon",
             "console": "integratedTerminal"
-
-
+        
         }
     ]
 }
