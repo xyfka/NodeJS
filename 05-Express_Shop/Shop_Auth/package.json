@@ -1,21 +1,24 @@
 {
-  "name": "nodejs-complete-guide",
+  "name": "Lukasz Shop",
   "version": "1.0.0",
-  "description": "Complete Node.js Guide",
+  "description": "Lukasz Shop",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "author": "Maximilian Schwarzmüller",
+  "author": "Lukasz Mazur",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.0.3",
+    "csurf": "^1.11.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-handlebars": "^6.0.2",
