@@ -1,9 +1,16 @@
 const bcrypt = require('bcryptjs');
+const sendMail = require('@sendgrid/mail');
+sendMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const User = require('../models/user');
 
 
-
+const msg = {
+  to: 'strorinskijarg@gmail.com',
+  from: 'lukasz.maz@gmail.com',
+  subject: 'Konto utworzone!',
+  html: '<h1>Twoje konto zostalo utworzone!</h1>',
+};
 
 exports.getLogin = (req, res, next) => {
   let message = req.flash('error');
@@ -93,6 +100,12 @@ exports.postSignup = (req, res, next) => {
         })
         .then(result => {
           res.redirect('/login');
+          sendMail.send(msg)
+          .then((response) => {
+            console.log(response[0].statusCode);
+            console.log(response[0].headers);
+          })
+          .catch(err => console.log(err));
         })
     })
     .catch(err => console.log(err));
