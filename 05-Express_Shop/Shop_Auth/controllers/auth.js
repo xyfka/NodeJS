@@ -2,7 +2,6 @@ const bcrypt = require('bcryptjs');
 
 const User = require('../models/user');
 
-// sendGrid api_key: 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
 
 
 
