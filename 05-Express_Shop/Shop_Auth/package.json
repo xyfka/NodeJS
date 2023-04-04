@@ -1,35 +1,32 @@
 {
-  "name": "Lukasz Shop",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "Lukasz Shop",
+  "description": "Complete Node.js Guide",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "author": "Lukasz Mazur",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^1.18.3"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.7.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.0.3",
-    "csurf": "^1.11.0",
-    "ejs": "^3.1.9",
+    "csurf": "^1.9.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "express-handlebars": "^6.0.2",
+    "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "mongodb": "^3.1.6",
     "mongoose": "^5.2.17",
     "mysql2": "^1.6.1",
-    "nodemailer-sendgrid-transport": "^0.2.0",
-    "pug": "^3.0.2",
-    "sequelize": "^6.30.0",
-    "uninstall": "^0.0.0"
+    "pug": "^2.0.3",
+    "sequelize": "^5.0.0-beta.11"
   }
 }
